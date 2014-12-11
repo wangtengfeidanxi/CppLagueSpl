@@ -59,11 +59,24 @@ double addvalues(char* str, ...)
  va_end(marker);
  return(result);
 }
+ namespace nm_sp_A{
+   int s;
+   void fn_A(){std::cout << "fn_A" << std::endl;}
+   void fn(){std::cout << "fn in spA" << std::endl;}
+}
+ namespace nm_sp_B{
+   int s_b;
+   void fn_B(){std::cout << "fn_B" << std::endl;}
+   void fn(){std::cout << "fn in spB" << std::endl;}
+}
    int main()
 {
     g();
 
     printf("sum is %d\n", addvalue(3, 2, 0));
 //    printf("sum is %f\n", addvalues("%d,%d,%d", 3, 3,3));
+    using namespace nm_sp_B;
+   fn();
+   nm_sp_A::fn();
    return 0;
-}
+
