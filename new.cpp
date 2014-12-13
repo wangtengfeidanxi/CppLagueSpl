@@ -24,5 +24,6 @@ void test_new(void)
    delete pbase;
    delete pbase2;
    delete pbaseinit;
+   printf("new over\n");
  // base onebase; 
 }
