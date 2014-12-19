@@ -4,7 +4,8 @@
 public:
    base():cstiChor(0){};
    base(int n); 
-public:
+    friend void show_mem_addr();
+private:
    char cCharBeforeChar;
    char cCharBeforeInt;
    double dDouble;
