@@ -3,6 +3,7 @@
 #include "new.h"
 #include "fn.h"
 #include "class.h"
+#include "classVirtul.h"
    int main()
 {
     g();
@@ -15,5 +16,6 @@
    test_new();
    printf("begin show_mem_addr\n");
    show_mem_addr();
+   shwoVirtulSture();
    return 0;
 }

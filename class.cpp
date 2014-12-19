@@ -25,5 +25,4 @@
     std::cout<<"Address of m is : "<< &m<<std::endl;
     m.print_addr();
     m.print_sta_mem();
-    std::cout<<"fn adds is: "<<reinterpret_cast<int*>(&memtest::print_addr)<<std::endl;
 }
