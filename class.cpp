@@ -1,4 +1,5 @@
 #include "class.h"
+#include <typeinfo>
   base::base(int n):cstiChor(n){}
  
 //  base baseA(2);
@@ -25,5 +26,7 @@
     std::cout<<"Address of m is : "<< &m<<std::endl;
     m.print_addr();
     m.print_sta_mem();
-    std::cout<<"fn adds is: "<<reinterpret_cast<int*>(&memtest::print_addr)<<std::endl;
+//    std::cout<<"fn adds is: "<<static_cast<int>(&memtest::print_addr)<<std::endl;
+    std::cout<<"base typeinfo: "<<typeid(base1).name()<<std::endl;
+    std::cout<<"memtest typeinfo: "<<typeid(m).name()<<std::endl;
 }
