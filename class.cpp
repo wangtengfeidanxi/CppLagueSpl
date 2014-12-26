@@ -29,4 +29,14 @@
 //    std::cout<<"fn adds is: "<<static_cast<int>(&memtest::print_addr)<<std::endl;
     std::cout<<"base typeinfo: "<<typeid(base1).name()<<std::endl;
     std::cout<<"memtest typeinfo: "<<typeid(m).name()<<std::endl;
+	child *pChild= new child;
+	base *pBa= dynamic_cast<base*>(pChild);
+	pBa->who();
+//	childB *pCldB= dynamic_cast<childB*>(pChild);
+//	pCldB->who();
+//	child *pCldBa= dynamic_cast<child*>(&base1);
+//	pCldBa->who();	
+	tesCls tescls;
+
+	delete pChild;
 }
