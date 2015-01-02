@@ -19,6 +19,8 @@ private:
 //   static const int s= 3;
 //   static const float f= 3.0;
 
+private:
+	base get(base& baseOne);
 };
 //memtest to test class mem structure
 class memtest

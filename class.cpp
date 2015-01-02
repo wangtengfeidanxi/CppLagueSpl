@@ -1,6 +1,10 @@
 #include "class.h"
   base::base(int n):cstiChor(n){}
- 
+	base base::get(base& baseOne)
+	{
+	  return baseOne;
+	} 
+
 //  base baseA(2);
 //  const int base::s ;
 //  const int *p= &baseA.s; 
