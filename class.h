@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> 
    class base
 {
 public:
@@ -16,11 +16,23 @@ private:
    char cChar5;
    double dDouble3;
   const  int cstiChor;
+public:
+  virtual void who(){std::cout<<"i'm base"<<std::endl;}
 //   static const int s= 3;
 //   static const float f= 3.0;
 
 private:
 	base get(base& baseOne);
+};
+   class child: public base
+{
+	public:
+		virtual void who(){std::cout<<"i'm child "<<std::endl;}
+};
+  class childB:public base
+{
+public:
+	virtual void who(){std::cout<<"i'm childB"<<std::endl;}
 };
 //memtest to test class mem structure
 class memtest
@@ -38,5 +50,12 @@ public:
     int a;
     double b;
     static int c;
+};
+ class tesCls
+{
+	public:
+	int foverr() const {std::cout<<"foverr const"<<std::endl;}	
+	void foverr(){std::cout<<"foverr"<<std::endl; 
+	return 2;}
 };
  void show_mem_addr();
