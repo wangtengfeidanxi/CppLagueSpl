@@ -6,16 +6,16 @@ public:
    base(int n); 
     friend void show_mem_addr();
 private:
-   char cCharBeforeChar;
-   char cCharBeforeInt;
-   double dDouble;
-   int iCharactor;
+//   int  cCharBeforeChar;
+//   char cCharBeforeInt;
+//   double dDouble;
+//   int iCharactor;
    char cCharAfterInt;
    char cChar4;
    double dDouble2; 
    char cChar5;
    double dDouble3;
-  const  int cstiChor;
+  const  long long cstiChor;
 public:
   virtual void who(){std::cout<<"i'm base"<<std::endl;}
 //   static const int s= 3;
@@ -53,7 +53,6 @@ public:
 {
 	public:
 	int foverr() const {std::cout<<"foverr const"<<std::endl;}	
-	void foverr(){std::cout<<"foverr"<<std::endl; 
-	return 2;}
+	void foverr(){std::cout<<"foverr"<<std::endl; }
 };
  void show_mem_addr();

@@ -18,7 +18,7 @@
      std::cout<<"shwomemaddr"<<std::endl;
     base base1(2);
     int sizebase= sizeof(base1);
-    std::cout<<"base1:"<<&base1<<", cCharBeforeChar: "<<(int*)&base1.cCharBeforeChar<<", cCharBeforeInt: "<<(int*)&base1.cCharBeforeInt<<", dDouble:"<<(int*)&base1.dDouble<<", iCharactor: "<<&base1.iCharactor<<", cCharAfterInt: "<<(int*)&base1.cCharAfterInt<<", cChar4:"<<(int*)&base1.cChar4<<", dDouble2:"<<(int*)&base1.dDouble2<<", cChar5:"<<(int*)&base1.cChar5<<", dDouble3:"<<(int*)&base1.dDouble3<<", cstiChor: "<<&base1.cstiChor<<std::endl;
+    std::cout<<"base1:"<<&base1/*<<", cCharBeforeChar: "<<(int*)&base1.cCharBeforeChar<<", cCharBeforeInt: "<<(int*)&base1.cCharBeforeInt<<", dDouble:"<<(int*)&base1.dDouble<<", iCharactor: "<<&base1.iCharactor*/<<", cCharAfterInt: "<<(int*)&base1.cCharAfterInt<<", cChar4:"<<(int*)&base1.cChar4<<", dDouble2:"<<(int*)&base1.dDouble2<<", cChar5:"<<(int*)&base1.cChar5<<", dDouble3:"<<(int*)&base1.dDouble3<<", cstiChor: "<<&base1.cstiChor<<std::endl;
     std::cout<<"size base: "<<sizebase<<std::endl;
     int sizememtest= sizeof(memtest);
     std::cout<<"sizeof memtest: "<<sizememtest<<std::endl;
