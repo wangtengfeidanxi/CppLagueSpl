@@ -4,6 +4,7 @@
 #include "fn.h"
 #include "class.h"
 #include "classVirtul.h"
+#include "stl-learn.h"
    int main()
 {
     g();
@@ -17,5 +18,7 @@
    printf("begin show_mem_addr\n");
    show_mem_addr();
    showVirtulSture();
+   heap_play();
+   set_play();
    return 0;
 }
