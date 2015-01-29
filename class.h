@@ -56,6 +56,6 @@ public:
 	public:
 	int foverr() const {std::cout<<"foverr const"<<std::endl;}	
 	void foverr(){std::cout<<"foverr"<<std::endl; 
-	return 2;}
+}
 };
  void show_mem_addr();
